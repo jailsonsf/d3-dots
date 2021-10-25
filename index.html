@@ -10,8 +10,7 @@
 <script>
     var svg = d3.select("svg"),
         width = +svg.attr("width"),
-        height = +svg.attr("height"),
-        selected;
+        height = +svg.attr("height")
     
     var random = Math.random,
         data = d3.range(100000).map(function() { return [random() * width, random() * height]; });

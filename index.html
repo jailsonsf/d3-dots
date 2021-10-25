@@ -13,7 +13,9 @@
         height = +svg.attr("height")
     
     var random = Math.random,
-        data = d3.range(100000).map(function() { return [random() * width, random() * height]; });
+        data = d3.range(100000).map(function() {
+          return [random() * width, random() * height];
+        });
     
     var point = svg.selectAll(".point")
       .data(data)
